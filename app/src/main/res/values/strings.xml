@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Trading App</string>
+    <string name="username_text">Username</string>
+    <string name="password_text">Password</string>
+    <string name="login_btn">Login</string>
+    <string name="register_btn">Register</string>
+    <string name="fullname_text">Fullname</string>
+    <string name="email_text">Email</string>
+    <string name="balance_text">Balance:</string>
+    <string name="account_holder_text">Account holder:</string>
+    <string name="deposit_text">Deposit</string>
+</resources>
