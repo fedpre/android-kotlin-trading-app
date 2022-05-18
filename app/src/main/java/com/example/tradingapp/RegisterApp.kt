@@ -8,10 +8,6 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 
-/*
-* TODO: Insert the new user in the database.
- */
-
 class RegisterApp : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

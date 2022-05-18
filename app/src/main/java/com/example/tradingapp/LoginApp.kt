@@ -9,10 +9,6 @@ import android.widget.TextView
 import android.widget.Toast
 import com.example.tradingapp.model.AppDatabase
 
-/*
-* TODO: Read from the database to log the user in
- */
-
 class LoginApp : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,7 +16,7 @@ class LoginApp : AppCompatActivity() {
 
         val loginBtn: Button = findViewById(R.id.loginBtn)
         loginBtn.setOnClickListener {
-            val intent = Intent(this, AccountApp::class.java)
+            val intentAccount = Intent(this, AccountApp::class.java)
             val usernameInput: TextView = findViewById(R.id.usernameInput)
             val passwordInput: TextView = findViewById(R.id.passwordInput)
 
@@ -28,7 +24,13 @@ class LoginApp : AppCompatActivity() {
             val storedUsername = pref.getString("USERNAME", "")
             val storedPassword = pref.getString("PASSWORD", "")
 
-            startActivity(intent)
+            if (usernameInput.text.toString() == storedUsername || passwordInput.text.toString() == storedPassword) {
+                startActivity(intentAccount)
+            } else {
+                Toast.makeText(this, "Username or password incorrect. Please try again.", Toast.LENGTH_SHORT).show()
+                usernameInput.text = ""
+                passwordInput.text = ""
+            }
         }
 
         val registerBtn: Button = findViewById(R.id.registerBtn)

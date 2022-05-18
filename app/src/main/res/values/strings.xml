@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Trading App</string>
+    <string name="app_name">Banking App</string>
     <string name="username_text">Username</string>
     <string name="password_text">Password</string>
     <string name="login_btn">Login</string>
@@ -9,4 +9,6 @@
     <string name="balance_text">Balance:</string>
     <string name="account_holder_text">Account holder:</string>
     <string name="deposit_text">Deposit</string>
+    <string name="input_text">Withdraw</string>
+    <string name="logout">Logout</string>
 </resources>

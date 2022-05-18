@@ -41,5 +41,26 @@ class AccountApp : AppCompatActivity() {
             Toast.makeText(this, "Amount deposited correctly.", Toast.LENGTH_SHORT).show()
             startActivity(intent)
         }
+
+        val withdrawBtn: Button = findViewById(R.id.withdrawBtn)
+        withdrawBtn.setOnClickListener {
+            val withdrawInput: TextView = findViewById(R.id.withdrawInput)
+            var storBalance = pref.getFloat("BALANCE", 0.00F)
+            storBalance -= withdrawInput.text.toString().toFloat()
+            // create shared preferences file
+            val editor = pref.edit()
+            editor.putFloat("BALANCE", storBalance)
+            editor.apply()
+
+            val intent = Intent(this, AccountApp::class.java)
+            Toast.makeText(this, "Amount withdrawn correctly.", Toast.LENGTH_SHORT).show()
+            startActivity(intent)
+        }
+
+        val logoutBtn: Button = findViewById(R.id.logoutBtn)
+        logoutBtn.setOnClickListener {
+            val intent = Intent(this, LoginApp::class.java)
+            startActivity(intent)
+        }
     }
 }

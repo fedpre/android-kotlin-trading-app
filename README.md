@@ -1,20 +1,19 @@
 # Overview
+The Banking App is an Android-based app developed in Kotlin that allows the user to create a new account, authenticate inside the system, and the deposit or withdraw money. It is intended to handle simple financial operations and keep track of the balance. The app has four screens:
+* On-boarding
+* Login
+* Register
+* Account
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
+The purpose of creating this app was to explore Mobile development and establish an entry point to the world of mobile programming. It was intended to explore how to use Android Studio, Kotlin, Object-oriented programming, user authentication, and navigation on multiple screens. 
 
-{Provide a description of your app.  Describe how to use the app.}
-
-{Describe your purpose for creating this app.}
-
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the app running and a walkthrough of the code.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[App Demo Video](http://youtube.link.goes.here)
 
 # Development Environment
-
-{Describe the tools that you used to develop the app}
-
-{Describe the programming language that you used and any libraries.}`
+* Android Studio 2021.2.1
+* Android Emulator
+* Kotlin
+* Andoid App Library
 
 # Useful Websites
 
@@ -31,8 +30,7 @@
 * [How to Save Key-Value pair](https://developer.android.com/training/data-storage/shared-preferences#kotlin)
 
 # Future Work
-
-{Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
-* Item 3
+* Connect to a cloud database: Firebase by Amazon
+* Allow for the creation of multiple users
+* Store transactions and show them to the user
+* Allow the user to make payments throu PayPal or Stripe API

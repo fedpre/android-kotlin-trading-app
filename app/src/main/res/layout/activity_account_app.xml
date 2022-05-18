@@ -82,4 +82,48 @@
         app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toEndOf="@+id/depositInput"
         app:layout_constraintTop_toTopOf="@+id/depositInput" />
+
+    <TextView
+        android:id="@+id/input_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/input_text"
+        app:layout_constraintStart_toStartOf="@+id/depositInput"
+        app:layout_constraintTop_toBottomOf="@+id/depositInput" />
+
+    <EditText
+        android:id="@+id/withdrawInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="@string/input_text"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/input_label"
+        app:layout_constraintTop_toTopOf="@+id/input_label" />
+
+    <Button
+        android:id="@+id/withdrawBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/input_text"
+        app:layout_constraintBottom_toBottomOf="@+id/withdrawInput"
+        app:layout_constraintEnd_toEndOf="@+id/depositBtn"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toEndOf="@+id/withdrawInput"
+        app:layout_constraintTop_toTopOf="@+id/withdrawInput"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:text="@string/logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
