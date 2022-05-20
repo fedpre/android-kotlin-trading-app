@@ -20,7 +20,7 @@
         android:id="@+id/username"
         android:layout_width="236dp"
         android:layout_height="83dp"
-        android:text="Welcome to the Trading App"
+        android:text="Welcome to the Banking App"
         android:textAlignment="center"
         android:textSize="32sp"
         android:textStyle="bold"

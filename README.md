@@ -7,7 +7,7 @@ The Banking App is an Android-based app developed in Kotlin that allows the user
 
 The purpose of creating this app was to explore Mobile development and establish an entry point to the world of mobile programming. It was intended to explore how to use Android Studio, Kotlin, Object-oriented programming, user authentication, and navigation on multiple screens. 
 
-[App Demo Video](http://youtube.link.goes.here)
+[App Demo Video](https://youtu.be/rRMNglzlFuI)
 
 # Development Environment
 * Android Studio 2021.2.1
